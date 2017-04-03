@@ -1,0 +1,15 @@
+<?php
+ini_set("display_errors", "0");
+
+// Here is a comment
+
+require("session.php");
+if ($_GET["foo"] == "bar") {
+    var_dump($_SESSION);
+    echo "<br>";
+}
+$cars = array("Volvo", "BMW", "Toyota");
+?>
+<p>Here is some inline HTML</p>
+<p>The first car is: <?= $cars[0] ?></p>
+
